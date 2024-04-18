@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quary selector </title>
+</head>
+
+<body>
+
+    <h1>Vivek Durgule</h1>
+    <input onkeyup="getvalue(this.value)" value="address" type="text" class="Name">
+    <input type="text" class="Name">
+</body>
+
+<script>
+    // function getvalue(value) {
+    //     console.log(value);
+    // }
+    function getvalue() {
+        var Name = document.querySelector('.Name').value;
+        console.log(Name);
+    }
+</script>
+
+</html>

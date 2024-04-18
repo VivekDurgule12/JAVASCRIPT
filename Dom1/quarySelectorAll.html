@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Get Element by ID</title>
+</head>
+
+<body class="grid place-item-center justify-center">
+
+    <h1>Get Element by ID</h1>
+    <p id="show">id 1</p>
+    <p id="show">id 2</p>
+    <p id="show">id 2</p>
+    <p id="show">id 2</p>
+    <p id="show">id 2</p>
+    <input onclick="checkInput()" type="button " value="Click " id="name" class=" text-black bg-blue-300 ">
+    <br><br>
+</body>
+<script>
+    function checkInput() {
+        var name = document.querySelectorAll('#show');
+        console.log(name[0].innerHTML);
+    }
+</script>
+
+</html>

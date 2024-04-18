@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Get element by id</title>
+</head>
+
+<body class="bg-black grid place-items-center h-screen text-white">
+
+
+    <!-- 1 -------------------------------------------------------------------------------------------------------- -->
+    <h1 class="">Get elemetn by id</h1>
+    <!-- <h1 id="Name" style="color: aqua;">Vivek Durgule </h1>
+    <br>
+    <a id="link" href="https://locomotive.ca/en">Locomotive</a><br><br>
+   
+    <button onclick="ChanegName()">Submit!</button>
+    <br> -->
+
+    <!-- 2 -------------------------------------------------------------------------------------------------------- -->
+
+    <!-- <p id="Show"></p>
+    <input type="text" value="Vivek  " id="name"><br><br>
+    <button onclick="CheckInput()"> Submit!</button> -->
+
+    <!-- 3 -------------------------------------------------------------------------------------------------------- -->
+    <p id="Show">id 1</p>
+    <p id="Show">id 2</p>
+    <input class="text-black" onkeyup="CheckInput()" id="name"><br><br>
+    <!-- 4 -------------------------------------------------------------------------------------------------------- -->
+
+
+</body>
+<script>
+    // for anchor <a> tag and tags  1
+    // var isName = document.getElementById('Name').innerText
+    // console.log(isName);
+
+    // 1  --------------------------------------------------------------------------------------------------------
+
+    // function ChanegName() {
+    //     var name = document.getElementById('Name');
+    //     name.innerText = "Vivek Dipak Durgule"
+    //     name.style.color = "gray"
+    //     name.style.fontSize = "100px"
+    //     var links = document.getElementById("link");
+    //     links.href = "https://gemini.google.com/app"
+    //     var links1 = document.getElementById("link").href
+    //     console.log(links1)
+
+    // }
+    // var links = document.getElementById("link").href
+    // console.log(links)
+    //  2 --------------------------------------------------------------------------------------------------------
+    //inputing data geting and setting
+
+    // function CheckInput() {
+    //     var name = document.getElementById('name').value
+    //     console.log(name)
+    //     document.getElementById('Show').innerText = name
+    // }
+    //  3--------------------------------------------------------------------------------------------------------
+    // onwite input box
+
+    function CheckInput() {
+        var name = document.getElementById('name').value;
+        if (name.length == 10) {
+            document.getElementById('Show').innerText = "This is valid Number " + name
+        } else if (name.length > 10) {
+            document.getElementById('Show').innerText = "This is invalid Number " + name
+        } else {
+            document.getElementById('Show').innerText = "Please Enter 10 Number "
+        }
+    }
+    // 4 --------------------------------------------------------------------------------------------------------
+</script>
+
+</html>

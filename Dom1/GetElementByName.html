@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Name</title>
+    <!-- Link to Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="text-center my-5">Get Element By Name</h1>
+
+    <form action="#" class="max-w-md mx-auto">
+        <input type="text" placeholder="Enter name" name="Name" class="border rounded-md px-4 py-2 mb-2 w-full"><br>
+        <input type="text" placeholder="Enter address" name="address" class="border rounded-md px-4 py-2 mb-2 w-full"><br>
+        <input type="text" placeholder="Enter address" name="address1" class="border rounded-md px-4 py-2 mb-2 w-full"><br>
+        <input type="text" placeholder="Enter Age" name="Age" class="border rounded-md px-4 py-2 mb-2 w-full"><br>
+        <button type="button" onclick="SubmitDoc()" class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit!</button>
+    </form>
+
+    <script>
+        function SubmitDoc() {
+            var Name = document.getElementsByName("address");
+            console.log(Name);
+            document.getElementsByName('Name')[0].value = "Vivek Durgule"
+        }
+
+        document.forms.item
+    </script>
+</body>
+
+</html>

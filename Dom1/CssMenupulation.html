@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css </title>
+    <style>
+        #Name {
+            transition: transform 2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="Name">Vivek Durgule</h1>
+    <p>Peth vadoagn</p>
+    <button onclick="ChangeCss()">Chaneg Css</button>
+</body>
+<script>
+    function ChangeCss() {
+        var para = document.querySelector('p');
+        var Name = document.querySelector('#Name');
+        para.style.fontSize = "50px"
+        para.style.background = "gray"
+        Name.style.color = "red"
+        Name.style.transform = "rotate(360deg)"
+    }
+</script>
+
+</html>

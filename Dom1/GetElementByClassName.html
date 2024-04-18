@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>get Element by ClassName </title>
+</head>
+
+<body class="bg-gray-500 font-gilroy ">
+
+
+    <h1 class="flex justify-center">Get Element By Class Name</h1>
+    <h1 class="flex justify-center align-Center">Vivek Durgule</h1>
+
+    <div>
+        <h3 class="address">Address</h3>
+        <h3 class="address"> Peth vadgoan</h3>
+        <input class="address" type="text" value="Vivek">
+    </div>
+
+    <script>
+        var className = document.getElementsByClassName("address")
+        for (i = 0; i < className.length; i++) {
+            console.log(className[i].innerHTML);
+        }
+        console.log(className[2].value)
+    </script>
+</body>
+
+</html>
